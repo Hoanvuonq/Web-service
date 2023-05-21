@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,700;1,300&family=Ubuntu:wght@300&display=swap');
+.login-page {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../../img/background/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-wrapper {
+    background-image:  url(../img/background/background.jpg);
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form-container {
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 54px;
+    padding-top: 65px;
+    border-radius: 22px;
+}
+
+.form-login {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-infinity {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 49px;
+}
+
+.wrap-input {
+    width: 100%;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 26px;
+}
+
+.validate-input {
+    position: relative;
+}
+
+.label-input {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.input {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+}
+
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input::after {
+    content: attr(data-symbol);
+    font-family: Material-Design-Iconic-Font;
+    color: #adadad;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.focus-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7f7f7f;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.input:focus + .focus-input::before {
+    width: 100%;
+}
+.input:focus + .focus-input::after {
+    color: #a64bf4;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+::placeholder {
+    font-weight: bold;
+    font-family: Poppins;
+    opacity: 0.5;
+}
+
+.forgot-password {
+    text-align: right;
+    padding-bottom: 31px;
+    padding-top: 8px;
+}
+
+.title-forgot {
+    font-weight: 300;
+
+}
+
+
+.title-forgot:hover ,
+.title-sign-up:hover {
+    color: #0b36d9ed;
+}
+
+.container-login-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.wrap-login-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+.login-form-bgbtn {
+    cursor: pointer;
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #514bf4;
+    background: -webkit-linear-gradient(
+    right,
+    #00dbde,
+    #fc00ff,
+    #00dbde,
+    #fc00ff
+    );
+    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.login-form-btn {
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+}
+.wrap-login-form-btn:hover .login-form-bgbtn {
+  left: 0;
+}
+
+.text {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.title-sign-up {
+    font-family: inherit;
+    font-weight: 600;
+}
+
+
+.login-with {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding-top: 20px ;
+}
+
+.logo-login-with {
+    font-size: 25px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+}
+
+.logo-login-with  img{
+    width: 40px;
+
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1024px){
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1025px){
+    .alert-validate:hover::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+@font-face {
+    font-family: Material-Design-Iconic-Font;
+    src: url(https://colorlib.com/etc/lf/Login_v4/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0)
+        format("woff2"),
+      url(https://colorlib.com/etc/lf/Login_v4/fonts/iconic/fonts/Material-Design-Iconic-Font.woff?v=2.2.0)
+        format("woff"),
+      url(https://colorlib.com/etc/lf/Login_v4/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf?v=2.2.0)
+        format("truetype");
+}
+
